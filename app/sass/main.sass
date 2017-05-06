@@ -13,6 +13,10 @@ a
 	text-decoration: none
 .row
 	margin: 0
+.img-responsive
+	display: block
+	width: 100%
+	height: auto
 html, body
 	height: 100%
 
@@ -23,277 +27,281 @@ body
 	overflow-x: hidden
 	font-family: "lato-thin"
 	opacity: 1
-	.header
-		background: #002258
-		.container
-			max-width: 1000px
-			padding: 0
-			.header__social-icons
-				padding-top: 7px
-				padding-bottom: 11px
-				a 
-					margin-right: 10px
-					height: 23px
-				img:hover 
-					transform: rotate(360deg)
-					transition: all .6s
-				span
-					color: #fff
-					font-size: 14px
-					padding-left: 30px
-					margin-top: 5px
-	.main 
-		background: #fff 
-		.container
-			max-width: 1000px
-			padding: 0
-			.main__about-company
-				padding-top: 15px
-				.main__logo
-					padding: 0
-					a  
-						border: 1px solid #18234b
-						width: 285px
-						height: 80px
-						display: block
-						text-align: center
-						font-size: 30px
-						color: #002258
-						padding-top: 12px
-						transition: all 1s ease
-						font-family: "HelveticaNeueCyr"
-					a:hover
-						color: white
-						background: #002258
-						text-decoration: none
-				.main__menu
-					padding: 30px 0
-					ul
-						text-transform: uppercase
-						font-size: 13px
-						font-family: "lato-regular"
-						li 
-							display: inline-block
-							padding-left: 44px
-							a
-								color: #002258
-			.main__autoplay
-				padding-top: 10px
-				margin-bottom: 30px
-				.main__slick-slide
-					position: relative
-					max-height: 500px
-					.main__text-slide
-						background: rgba(0,0,0,0.5)
-						position: relative
-						top: -350px
-						padding-top: 25px
-						h2
-							margin: 0
-							padding-left: 60px
-							color: #fff 
-							font-size: 52px
-							line-height: 58px
-							font-family: "lato-light"
-							span 
-								font-size: 43px
-						p 
-							margin: 0
-							font-size: 13px
-							color: #fff 
-							padding-left: 70px
-							padding-bottom: 10px
-							font-family: "lato-regular"
-				.slick-dots	
-					list-style: none
-					margin: 0
-					padding: 0
+.header
+	background: #002258
+	.container
+		max-width: 1000px
+		padding: 0
+		.header__social-icons
+			padding-top: 7px
+			padding-bottom: 11px
+			a 
+				margin-right: 10px
+				height: 23px
+			img:hover 
+				transform: rotate(360deg)
+				transition: all .6s
+			span
+				color: #fff
+				font-size: 14px
+				padding-left: 30px
+				margin-top: 5px
+.main 
+	background: #fff 
+	.container
+		max-width: 1000px
+		padding: 0
+		.main__about-company
+			padding-top: 15px
+			.main__logo
+				padding: 0
+				a  
+					border: 1px solid #18234b
+					width: 285px
+					height: 80px
+					display: block
 					text-align: center
-					border: none 
-					position: absolute
-					bottom: 10px
-					left: 45%
-					li 
-						display: inline-block
-						width: 12px
-						height: 12px
-						margin: 0px
-						margin-left: 7px
-						outline: none
-						background: rgba(255,255,255,0)
-						border-radius: 6px
-					button
-						background: rgba(255,255,255,0)
-						width: 12px
-						height: 12px
-						border-radius: 6px
-						text-indent: -99999px
-						padding: 0
-						outline: none
-						border: 1px solid #fff
-					.slick-active button
-						background: #fff
-			.main__products
-				margin-bottom: 15px
-				h2
-					margin: 0
+					font-size: 30px
 					color: #002258
-					font-size: 24px
+					padding-top: 12px
+					transition: all 1s ease
+					font-family: "HelveticaNeueCyr"
+				a:hover
+					color: white
+					background: #002258
+					text-decoration: none
+			.main__menu
+				padding: 30px 0
+				ul
 					text-transform: uppercase
-					font-family: "lato-light"
-				.main__types-product
-					display: flex
-					justify-content: space-between
-					margin-bottom: 15px
-					li
-						width: 19%
-						a
-							display: block
-							position: relative
-							.main__text-products
-								display: flex
-								align-items: center
-								justify-content: center
-								position: absolute
-								bottom: 0
-								left: 0px
-								width: 100%
-								color: #fff
-								text-transform: uppercase
-								background: rgba(0,0,0,0.7)
-								text-align: center
-								padding: 0 20px
-								height: 53px
-								transition: all 0.5s ease
-								z-index: 2
-								p
-									font-size: 12px
-									line-height: 16px
-									font-family: "lato-light"
-							&:after
-								content: ""
-								position: absolute
-								top: 0
-								left: 0
-								width: 100%
-								height: 100%
-								background: rgba(0,0,0,0.3)
-								z-index: 1
-							&:hover
-								.main__text-products
-									height: 100%
-									p
-										font-size: 16px
-										line-height: 20px
-				.main__product-line
-					text-align: center
-					p 
-						width: 60%
-						height: 1px
-						margin: 0 auto
-						background: #bfbfbf
-			.main__portfolio-about
-				padding-bottom: 40px
-				.main__abouts
-					position: relative
-					padding: 0
-					.item
-						cursor: pointer
-						display: block
-						img
-							width: 100%
-							height: 244px
-					.mask
-						width: 100%
-						height: 100%
-						position: absolute
-						overflow: hidden
-						top: 0
-						left: 0
-						p 
-							margin: 0
-							color: #fefefe
-							font-size: 48px
-							text-transform: uppercase
-							position: absolute
-							font-family: "lato-light"
-				.effect-blackout
-					.mask
-						opacity: 0
-						overflow: visible
-						border: 0px solid rgba(0,0,0,0.5)
-						transition: all 0.4s ease-in-out
-						p 
-							position: relative
-							top: -25px
-							left: 0px
-							opacity: 0
-							transform: scale(0,0)
-							transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out
-				.effect-blackout:hover
-					.mask
-						opacity: 1
-						border: 122px solid rgba(0,0,0,0.5)
-						p 
-							opacity: 1
-							transform: scale(1,1)
-							transition-delay: 0.3s
-							cursor: pointer
-				.effect-blackout1
-					padding-right: 5px
-				.effect-blackout2
-					padding-left: 5px
-
-	.footer
-		background: #002258
-		padding-bottom: 15px
-		.container
-			max-width: 1000px
-			padding: 0
-			.footer__copy 
-				padding-top: 16px
-				p 
-					margin: 0
-					color: #fefeff
-					font-size: 14px
-			.footer__contacts
-				padding-top: 16px
-				ul 
-					font-size: 14px
-					text-transform: uppercase
-					font-family: "lato-light"
+					font-size: 13px
+					font-family: "lato-regular"
 					li 
 						display: inline-block
-						padding: 0px 15px
+						padding-left: 44px
+						a
+							color: #002258
+		.overlay
+				position: fixed
+				background: rgba(0,0,0,0.9)
+				height: 100%
+				left: 0px
+				top: 0
+				width: 100%
+				z-index: 4
+				display: none
+		.main__autoplay
+			padding-top: 10px
+			margin-bottom: 30px
+			.main__slick-slide
+				position: relative
+				.main__text-slide
+					background: rgba(0,0,0,0.5)
+					position: absolute
+					top: 30%
+					width: 100%
+					padding-top: 25px
+					padding-left: 65px
+					h2 
+						display: block
+						margin: 0
+						color: #fff 
+						font-size: 52px
+						line-height: 58px
+						font-family: "lato-light"
+						span 
+							font-size: 43px
+					p 
+						margin: 0
+						font-size: 13px
+						color: #fff 
+						padding-bottom: 10px
+						font-family: "lato-regular"
+			.slick-dots	
+				list-style: none
+				margin: 0
+				padding: 0
+				text-align: center
+				border: none 
+				position: absolute
+				bottom: 10px
+				left: 45%
+				li 
+					display: inline-block
+					width: 12px
+					height: 12px
+					margin: 0px
+					margin-left: 7px
+					outline: none
+					background: rgba(255,255,255,0)
+					border-radius: 6px
+				button
+					background: rgba(255,255,255,0)
+					width: 12px
+					height: 12px
+					border-radius: 6px
+					text-indent: -99999px
+					padding: 0
+					outline: none
+					border: 1px solid #fff
+				.slick-active button
+					background: #fff
+		.main__products
+			margin-bottom: 15px
+			h2
+				margin: 0
+				color: #002258
+				font-size: 24px
+				text-transform: uppercase
+				font-family: "lato-light"
+			.main__types-product
+				display: flex
+				justify-content: space-between
+				margin-bottom: 15px
+				li
+					width: 19%
+					a
+						display: block
 						position: relative
-						a 
-							color: #fff 
-							text-decoration: none
-						a:hover
-							font-weight: bold
-					li:after
-						content: ''
+						.main__text-products
+							display: flex
+							align-items: center
+							justify-content: center
+							position: absolute
+							bottom: 0
+							left: 0px
+							width: 100%
+							color: #fff
+							text-transform: uppercase
+							background: rgba(0,0,0,0.7)
+							text-align: center
+							padding: 0 20px
+							height: 53px
+							transition: all 0.5s ease
+							z-index: 2
+							p
+								font-size: 12px
+								line-height: 16px
+								font-family: "lato-light"
+						&:after
+							content: ""
+							position: absolute
+							top: 0
+							left: 0
+							width: 100%
+							height: 100%
+							background: rgba(0,0,0,0.3)
+							z-index: 1
+						&:hover
+							.main__text-products
+								height: 100%
+								p
+									font-size: 16px
+									line-height: 20px
+			.main__product-line
+				text-align: center
+				p 
+					width: 60%
+					height: 1px
+					margin: 0 auto
+					background: #bfbfbf
+		.main__portfolio-about
+			padding-bottom: 40px
+			.main__abouts
+				position: relative
+				padding: 0
+				.item
+					cursor: pointer
+					display: block
+					img
+						width: 100%
+						height: 244px
+				.mask
+					width: 100%
+					height: 100%
+					position: absolute
+					overflow: hidden
+					top: 0
+					left: 0
+					p 
+						margin: 0
+						color: #fefefe
+						font-size: 48px
+						text-transform: uppercase
 						position: absolute
-						background: #fff
-						width: 1px
-						height: 12px
-						top: 6px
+						font-family: "lato-light"
+			.effect-blackout
+				.mask
+					opacity: 0
+					overflow: visible
+					border: 0px solid rgba(0,0,0,0.5)
+					transition: all 0.4s ease-in-out
+					p 
+						position: relative
+						top: -25px
 						left: 0px
-					li:first-child:after
-						content: ''
-						position: absolute
-						background: #fff
-						width: 0px
-						height: 0px
-					.active
+						opacity: 0
+						transform: scale(0,0)
+						transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out
+			.effect-blackout:hover
+				.mask
+					opacity: 1
+					border: 122px solid rgba(0,0,0,0.5)
+					p 
+						opacity: 1
+						transform: scale(1,1)
+						transition-delay: 0.3s
+						cursor: pointer
+			.effect-blackout1
+				padding-right: 5px
+			.effect-blackout2
+				padding-left: 5px
+
+.footer
+	background: #002258
+	padding-bottom: 15px
+	.container
+		max-width: 1000px
+		padding: 0
+		.footer__copy 
+			padding-top: 16px
+			p 
+				margin: 0
+				color: #fefeff
+				font-size: 14px
+		.footer__contacts
+			padding-top: 16px
+			ul 
+				font-size: 14px
+				text-transform: uppercase
+				font-family: "lato-light"
+				li 
+					display: inline-block
+					padding: 0px 15px
+					position: relative
+					a 
+						color: #fff 
+						text-decoration: none
+					a:hover
 						font-weight: bold
+				li:after
+					content: ''
+					position: absolute
+					background: #fff
+					width: 1px
+					height: 12px
+					top: 6px
+					left: 0px
+				li:first-child:after
+					content: ''
+					position: absolute
+					background: #fff
+					width: 0px
+					height: 0px
+				.active
+					font-weight: bold
 
 
 
-	
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
 
 @import "media" 
