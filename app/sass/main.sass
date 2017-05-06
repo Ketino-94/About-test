@@ -1,0 +1,215 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+html, body
+	height: 100%
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	overflow-x: hidden
+	opacity: 1
+	.header
+		background: #002258
+		.container
+			max-width: 1000px
+			padding: 0
+			.header__social-icons
+				padding-top: 7px
+				padding-bottom: 11px
+				a 
+					margin-right: 10px
+					height: 23px
+				img:hover 
+					transform: rotate(360deg)
+					transition: all .6s
+				span
+					color: #fff
+					font-size: 14px
+					padding-left: 30px
+					margin-top: 5px
+	.main 
+		background: #fff 
+		.container
+			max-width: 1000px
+			padding: 0
+			.main__about-company
+				padding-top: 15px
+				.main__logo
+					padding: 0
+					a  
+						border: 1px solid #18234b
+						width: 285px
+						height: 80px
+						display: block
+						text-align: center
+						font-size: 30px
+						color: #002258
+						padding-top: 12px
+					a:hover
+						text-decoration: none
+						position: relative
+						top: -1px
+						left: 1px
+				.main__menu
+					padding: 30px 0
+					ul
+						text-transform: uppercase
+						font-size: 13px
+						li 
+							display: inline-block
+							padding-left: 44px
+							a
+								color: #002258
+			.main__products
+				padding-top: 30px
+				position:relative
+				h2
+					margin: 0
+					color: #002258
+					font-size: 24px
+					text-transform: uppercase
+				.main__types-product
+					li
+						display: inline-block
+						width: 19%
+						margin-left: 8px
+						a 
+							img
+								border: 0
+								margin: 0
+								padding: 0
+								display: inline-block
+								position: relative
+								overflow: hidden
+								max-width: 100%
+						p
+							position: relative
+							bottom: 62px
+							left: 0px
+							width: 193px
+							height: 50px
+							color: #fff
+							font-size: 12px
+							text-transform: uppercase
+							background: rgba(0,0,0,0.7)
+					li:first-child
+						margin-left: 0px
+			.main__products:after
+				content: ''
+				position: absolute
+				background: #bfbfbf
+				width: 600px
+				height: 1px
+				bottom: -17px
+				left: 376px
+			.main__portfolio-about
+				padding-bottom: 40px
+				.main__abouts
+					position: relative
+					padding: 0
+					.item
+						display: inline-block
+						cursor: pointer
+						width: 494px
+						img
+							border: 0
+							margin: 0
+							padding: 0
+							display: inline-block
+							position: relative
+							overflow: hidden
+							max-width: 100%
+					.mask
+						width: 494px
+						height: 245px
+						position: absolute
+						overflow: hidden
+						top: 0
+						left: 0
+						p 
+							margin: 0
+							color: #fefefe
+							font-size: 48px
+							text-transform: uppercase
+							position: absolute
+				.effect-blackout
+					.mask
+						opacity: 0
+						overflow: visible
+						border: 0px solid rgba(0,0,0,0.5)
+						transition: all 0.4s ease-in-out
+						p 
+							position: relative
+							top: -25px
+							left: 0px
+							opacity: 0
+							transform: scale(0,0)
+							transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out
+				.effect-blackout:hover
+					.mask
+						opacity: 1
+						border: 123px solid rgba(0,0,0,0.5)
+						p 
+							opacity: 1
+							transform: scale(1,1)
+							transition-delay: 0.3s
+							cursor: pointer
+	.footer
+		background: #002258
+		padding-bottom: 20px
+		.container
+			max-width: 1000px
+			padding: 0
+			.footer__copy 
+				padding-top: 16px
+				p 
+					margin: 0
+					color: #fefeff
+					font-size: 14px
+			.footer__contacts
+				padding-top: 16px
+				ul 
+					font-size: 14px
+					text-transform: uppercase
+					li 
+						display: inline-block
+						padding: 0px 15px
+						position: relative
+						a 
+							color: #fff 
+							text-decoration: none
+						a:hover
+							font-weight: bold
+					li:after
+						content: ''
+						position: absolute
+						background: #fff
+						width: 1px
+						height: 12px
+						top: 6px
+						left: 0px
+					li:first-child:after
+						content: ''
+						position: absolute
+						background: #fff
+						width: 0px
+						height: 0px
+					.active
+						font-weight: bold
+
+
+
+	
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+@import "media" 
