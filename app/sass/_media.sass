@@ -1,5 +1,7 @@
 @import "vars"
 
+/*==========  Desktop First  ==========*/
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
@@ -7,17 +9,438 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-
+	.main 
+		background: #fff 
+		.container
+			max-width: 1000px
+			padding: 0
+			.main__portfolio-about
+					padding-bottom: 40px
+					.main__abouts
+						position: relative
+						padding: 0
+						.item
+							cursor: pointer
+							display: block
+							img
+								width: 100%
+								height: 244px
+						.mask
+							width: 100%
+							height: 100%
+							position: absolute
+							overflow: hidden
+							top: 0
+							left: 0
+							p 
+								margin: 0
+								color: #fefefe
+								font-size: 26px
+								text-transform: uppercase
+								position: absolute
+								font-family: "lato-light"
+					.effect-blackout
+						.mask
+							opacity: 0
+							overflow: visible
+							border: 0px solid rgba(0,0,0,0.5)
+							transition: all 0.4s ease-in-out
+							p 
+								position: relative
+								top: -25px
+								top: -7%
+								opacity: 0
+								transform: scale(0,0)
+								transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.header
+		background: #002258
+		.container
+			max-width: 1000px
+			padding: 0
+			.header__social-icons
+				padding-top: 7px
+				padding-bottom: 11px
+				padding-left: 30px
+	.main 
+		background: #fff 
+		.container
+			max-width: 1000px
+			padding: 0
+			.main__about-company
+				padding-top: 15px
+				.main__logo
+					padding: 0
+					a  
+						border: 1px solid #18234b
+						width: 200px
+						height: 60px
+						display: block
+						text-align: center
+						font-size: 30px
+						color: #002258
+						padding-top: 0px
+						transition: all 1s ease
+						font-family: "HelveticaNeueCyr"
+						margin-left: 150px
+				.main__menu
+					padding: 30px 0
+					ul
+						text-transform: uppercase
+						font-size: 13px
+						font-family: "lato-regular"
+						text-align: center
+						li 
+							display: inline-block
+							padding-left: 16px
+							a
+								color: #002258
+			.main__autoplay
+				padding-top: 10px
+				margin-bottom: 30px
+				.main__slick-slide
+					position: relative
+					.main__text-slide
+						background: rgba(0,0,0,0.5)
+						position: absolute
+						top: 10%
+						width: 100%
+						padding-top: 25px
+						padding-left: 25px
+						h2 
+							display: block
+							margin: 0
+							color: #fff 
+							font-size: 38px
+							line-height: 38px
+							font-family: "lato-light"
+							span 
+								font-size: 28px
+						p 
+							margin: 0
+							font-size: 13px
+							color: #fff 
+							padding-bottom: 10px
+							font-family: "lato-regular"
+				.slick-dots	
+					li 
+						display: inline-block
+						width: 0px
+						height: 0px
+						margin: 0px
+						margin-left: 7px
+						outline: none
+						background: rgba(255,255,255,0)
+						border-radius: 6px
+					button
+						background: rgba(255,255,255,0)
+						width: 0px
+						height: 0px
+						border-radius: 6px
+						text-indent: -99999px
+						padding: 0
+						outline: none
+						border: 1px solid #fff
+			.main__portfolio-about
+				padding-bottom: 40px
+				.main__abouts
+					position: relative
+					padding: 0 20px
+					margin: 10px 0px
+					.item
+						cursor: pointer
+						display: block
+						img
+							width: 100%
+							height: 244px
+					.mask
+						width: 100%
+						height: 100%
+						position: absolute
+						overflow: hidden
+						top: 0
+						left: 0
+						p 
+							margin: 0
+							color: #fefefe
+							font-size: 30px
+							text-transform: uppercase
+							position: absolute
+							font-family: "lato-light"
+				.effect-blackout
+					.mask
+						opacity: 0
+						overflow: visible
+						border: 0px solid rgba(0,0,0,0.5)
+						transition: all 0.4s ease-in-out
+						p 
+							position: relative
+							top: -25px
+							left: 25%
+							opacity: 0
+							transform: scale(0,0)
+							transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out
+	.footer
+		background: #002258
+		padding-bottom: 15px
+		.container
+			max-width: 1000px
+			padding: 0
+			.footer__copy 
+				padding-top: 16px
+				text-align: center
+				p 
+					margin: 0
+					color: #fefeff
+					font-size: 12px
+			.footer__contacts
+				padding-top: 16px
+				ul 
+					font-size: 12px
+					text-transform: uppercase
+					font-family: "lato-light"
+					text-align: center
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	.main 
+		background: #fff 
+		.container
+			max-width: 1000px
+			padding: 0
+			.main__about-company
+				padding-top: 15px
+				.main__logo
+					padding: 0
+					a  
+						border: 1px solid #18234b
+						width: 200px
+						height: 60px
+						display: block
+						text-align: center
+						font-size: 30px
+						color: #002258
+						padding-top: 0px
+						transition: all 1s ease
+						font-family: "HelveticaNeueCyr"
+						margin-left: 30px
+				.main__menu
+					padding: 30px 0
+					ul
+						display: none
+						text-transform: uppercase
+						font-size: 22px
+						font-family: "lato-regular"
+						text-align: center
+						z-index: 5
+						li 
+							display: block
+							padding-left: 44px
+							a
+								color: #000
+			.toggle-menu
+				position: absolute
+				top: 2px
+				right: 30px
+				width: 35px
+				height: 30px
+				cursor: pointer
+				z-index: 1
+				span
+					display: block
+					background: #fff
+					margin: 4px 0px
+					width: 35px
+					height: 5px
+					border-radius: 5px
+			.main__autoplay
+				padding-top: 10px
+				margin-bottom: 30px
+				.main__slick-slide
+					position: relative
+					.main__text-slide
+						background: rgba(0,0,0,0.5)
+						position: absolute
+						top: 10%
+						width: 100%
+						padding-top: 25px
+						padding-left: 10px
+						h2 
+							display: block
+							margin: 0
+							color: #fff 
+							font-size: 26px
+							line-height: 26px
+							font-family: "lato-light"
+							span 
+								font-size: 22px
+						p 
+							margin: 0
+							font-size: 11px
+							color: #fff 
+							padding-bottom: 10px
+							font-family: "lato-regular"
+				.slick-dots	
+					li 
+						display: inline-block
+						width: 0px
+						height: 0px
+						margin: 0px
+						margin-left: 7px
+						outline: none
+						background: rgba(255,255,255,0)
+						border-radius: 6px
+					button
+						background: rgba(255,255,255,0)
+						width: 0px
+						height: 0px
+						border-radius: 6px
+						text-indent: -99999px
+						padding: 0
+						outline: none
+						border: 1px solid #fff
+			.main__products
+				margin-bottom: 15px
+				h2
+					text-align: center
+				.main__types-product
+					display: block
+					justify-content: none
+					margin-bottom: 15px
+					li
+						width: 100%
+						margin: 0 auto 
+						margin-bottom: 12px
+						padding: 0 25px
+						a
+							display: block
+							position: relative
+							.main__text-products
+								display: flex
+								align-items: center
+								justify-content: center
+								position: absolute
+								bottom: 0
+								left: 0px
+								width: 100%
+								color: #fff
+								text-transform: uppercase
+								background: rgba(0,0,0,0.7)
+								text-align: center
+								padding: 0 20px
+								height: 53px
+								transition: all 0.5s ease
+								z-index: 2
+								p
+									font-size: 12px
+									line-height: 16px
+									font-family: "lato-light"
+							&:hover
+								display: none
+								.main__text-products
+									height: 100%
+									p
+										font-size: 16px
+										line-height: 20px
+				.main__product-line
+					text-align: center
+					p 
+						width: 60%
+						height: 1px
+						margin: 0 auto
+						background: #bfbfbf
+			.main__portfolio-about
+				padding-bottom: 40px
+				.main__portfolio-about
+					padding-bottom: 40px
+					.main__abouts
+						position: relative
+						padding: 0 20px
+						margin: 10px 0px
+						.item
+							cursor: pointer
+							display: block
+							img
+								width: 100%
+								height: 244px
+						.mask
+							width: 100%
+							height: 100%
+							position: absolute
+							overflow: hidden
+							top: 0
+							left: 0
+							p 
+								margin: 0
+								color: #fefefe
+								font-size: 30px
+								text-transform: uppercase
+								position: absolute
+								font-family: "lato-light"
+					.effect-blackout
+						.mask
+							opacity: 0
+							overflow: visible
+							border: 0px solid rgba(0,0,0,0.5)
+							transition: all 0.4s ease-in-out
+							p 
+								position: relative
+								top: -25px
+								left: 25%
+								opacity: 0
+								transform: scale(0,0)
+								transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out
+
+	.footer
+		background: #002258
+		padding-bottom: 15px
+		.container
+			max-width: 1000px
+			padding: 0
+			.footer__copy 
+				padding-top: 16px
+				p 
+					margin: 0
+					color: #fefeff
+					font-size: 14px
+			.footer__contacts
+				padding-top: 16px
+				ul 
+					font-size: 14px
+					text-transform: uppercase
+					font-family: "lato-light"
+					li 
+						display: inline-block
+						padding: 0px 15px
+						position: relative
+						a 
+							color: #fff 
+							text-decoration: none
+						a:hover
+							font-weight: bold
+					li:after
+						content: ''
+						position: absolute
+						background: #fff
+						width: 1px
+						height: 12px
+						top: 6px
+						left: 0px
+					li:first-child:after
+						content: ''
+						position: absolute
+						background: #fff
+						width: 0px
+						height: 0px
+					.active
+						font-weight: bold
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
 
 

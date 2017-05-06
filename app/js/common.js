@@ -8,6 +8,15 @@ $(function() {
 	  arrows: false,
 	  dots: true,
 	});
-	// Custom JS
+	
+	$('.toggle-menu').on('click', function(){
+		$('.overlay').fadeIn();
+		$('.main__menu ul').fadeIn();
+		return false;
+	})
+	$('.header__main__nav, .overlay').on('click', function(){
+		$('.overlay').fadeOut();
+		$('.main__menu ul').fadeOut();
+	})
 
 });
